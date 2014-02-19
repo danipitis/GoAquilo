@@ -6,39 +6,44 @@
 
 import pygame
 import os
-import constants
-import game
 
-# Game window goes on the center screen
-os.environ['SDL_VIDEO_CENTERED'] = '1'
+from scripts import constants
+from scripts import game
 
-# Let the fun begin        
-pygame.init()
+def main():
+	# Game window goes on the center screen
+	os.environ['SDL_VIDEO_CENTERED'] = '1'
 
-size   = (constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT)
-screen = pygame.display.set_mode(size)
+	# Let the fun begin        
+	pygame.init()
 
-pygame.display.set_caption("GoAquilo")
-# Uncomment the next line to hide the mouse arrow
-# pygame.mouse.set_visible(False)
+	size   = (constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT)
+	screen = pygame.display.set_mode(size)
 
-done  = False
-clock = pygame.time.Clock()
+	pygame.display.set_caption("GoAquilo")
+	# Uncomment the next line to hide the mouse arrow
+	# pygame.mouse.set_visible(False)
 
-game_instance = game.Game()
+	done  = False
+	clock = pygame.time.Clock()
 
-# While the game has not ended
-while not done:
+	game_instance = game.Game()
 
-	done = game_instance.process_events()
+	# While the game has not ended
+	while not done:
 
-	# Update object positions, check for collisions
-	game_instance.run_logic()
+		done = game_instance.process_events()
 
-	# Draw the current frame
-	game_instance.display_frame(screen)	
+		# Update object positions, check for collisions
+		game_instance.run_logic()
 
-	# Number of frames per second
-	clock.tick(60)
+		# Draw the current frame
+		game_instance.display_frame(screen)	
+
+		# Number of frames per second
+		clock.tick(60)
 
 pygame.quit()
+
+if __name__ == "__main__":
+	main()

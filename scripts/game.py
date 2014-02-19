@@ -6,10 +6,11 @@
 
 import pygame
 import random
-import constants
-import models
-import timer
-import load_images
+
+from scripts import constants
+from scripts import models
+from scripts import timer
+from scripts import load_images
 
 class Game(object):
 	""" Game class holding the methods for process events, game logic and objects display"""
@@ -162,9 +163,11 @@ class Game(object):
 			center_x = (constants.SCREEN_WIDTH // 2) - (first_line.get_width() // 2)
 			center_y = (constants.SCREEN_HEIGHT // 2) - (first_line.get_height() // 2)
 			screen.blit(first_line, [center_x, center_y])
-			center_x = (constants.SCREEN_WIDTH // 2) - (second_line.get_width() // 2)
+			
+			center_x = (constants.SCREEN_WIDTH // 2) - (second_line.get_width() // 2)	
 			center_y = (constants.SCREEN_HEIGHT // 2) - (second_line.get_height() // 2) + 50
-			screen.blit(second_line, [center_x, center_y])	
+			screen.blit(second_line, [center_x, center_y])
+
 
 	def _add_enemies(self, number_of_enemies):
 		for i in range(number_of_enemies):
