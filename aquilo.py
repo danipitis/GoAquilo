@@ -1,6 +1,6 @@
-# aquilo.py Version 1.0.0
+# aquilo.py Version 1.1.0
 # This is part of GoAquilo game
-# Copyright (c) Pitis Daniel <pitis.dan@gmail.com>
+# Copyright (c) Pitis Daniel <pitis.dan [at] gmail [dot] com>
 # This script is published under the terms of the MIT license
 # http://opensource.org/licenses/MIT
 
@@ -40,8 +40,8 @@ def main():
 		# Draw the current frame
 		game_instance.display_frame(screen)	
 
-		# Number of frames per second
-		clock.tick(60)
+		# Set frames per second
+		clock.tick(constants.FPS)
 
 pygame.quit()
 

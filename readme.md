@@ -1,14 +1,15 @@
 GoAquilo
 ========
 
-Current Version is 1.0.0
+Current Version is 1.1.0
 ------------------------
 
-**GoAquilo** is an arcade shooting game, similar with space wars/chicken invaders but simpler. You have only a gun and your goal is to take down as many enemies as you a can before they "escape" from the screen. 
+**GoAquilo** is an arcade shooting game, similar with space wars/chicken invaders but simpler. You are a solider with a gun and your goal is to take down as many enemies as you a can before they "escape" from the screen. 
 
-   - Use left and right arrow keys to move, mouse to shoot
+   - Use left and right arrow keys to move, mouse or space to shoot
    - Try to shoot as many terrorists as you can
    - Be *quick*
+   - Try to reach Level 6
    - Take the source code and add your ideas to it
 
 I started working on this game after taking the online <a href="http://programarcadegames.com" target="_blank">class</a> from **Paul Vincent Craven**. If you want to start making arcade games using python i definitely advice you to go on the website and start learning. It's *AWESOME* !
@@ -16,14 +17,14 @@ I started working on this game after taking the online <a href="http://programar
 Technologies used
 -----------------
 
-GoAquilo is coded using **Python 2.7.3** and the **Pygame 1.9.2** module
+GoAquilo is coded using **Python 2.7.3** and the **Pygame 1.9.2a0** modules
 
 What is Pygame?
 
 >Pygame is a set of Python modules designed for writing games. Pygame adds functionality on top of the excellent SDL library. This allows you to create fully featured games and multimedia programs in the python language. Pygame is highly portable and runs on nearly every platform and operating system. Pygame itself has been downloaded millions of times, and has had millions of visits to its website.
 
 
-You can download version 1.9.2 of Pygame from <a href="http://www.pygame.org/download.shtml" target="_blank">here</a> and follow the <a href="http://programarcadegames.com/index.php?chapter=forward" target="_blank">instructions</a> in order to install Pygame on your operating system.
+You can download version 1.9.2a0 of Pygame from <a href="http://www.pygame.org/download.shtml" target="_blank">here</a> and follow the <a href="http://programarcadegames.com/index.php?chapter=forward" target="_blank">instructions</a> in order to install Pygame on your operating system.
 
 
 Running the game
@@ -47,7 +48,7 @@ And the **background** texture belongs to user @nitro52 from <a href="http://www
 License
 -------
 
-Copyright (c) 2014 - **Pitis Daniel**
+Copyright (c) 2014 **Pitis Daniel**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

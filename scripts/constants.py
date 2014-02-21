@@ -1,13 +1,19 @@
-# constants.py Version 1.0.0
+# constants.py
 # This is part of GoAquilo game
-# Copyright (c) Pitis Daniel <pitis.dan@gmail.com>
+# Copyright (c) Pitis Daniel <pitis.dan [at] gmail [dot] com>
 # This script is published under the terms of the MIT license
 # http://opensource.org/licenses/MIT
 
 """
 Global game constants
 """
- 
+
+# Settings
+FPS             = 30
+CURRENT_LIFES   = 10
+SPAWNED_ENEMIES = 15
+PLAYER_SPEED    = 6
+
 # Colors
 BLACK    = (   0,   0,   0) 
 WHITE    = ( 255, 255, 255) 

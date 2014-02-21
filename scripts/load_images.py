@@ -1,6 +1,6 @@
-# load_images.py Version 1.0.0
+# load_images.py
 # This is part of GoAquilo game
-# Copyright (c) Pitis Daniel <pitis.dan@gmail.com>
+# Copyright (c) Pitis Daniel <pitis.dan [at] gmail [dot] com>
 # This script is published under the terms of the MIT license
 # http://opensource.org/licenses/MIT
 
@@ -38,4 +38,4 @@ class LoadImages(object):
 
     def _print_error(self, file_name):
         err = 'Unable to load image:', file_name
-        print err8
+        print err
