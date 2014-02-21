@@ -68,7 +68,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-The pictures used in this software are the property of their respective owners as mentioned in "Resources copyright" above.
 
 [@PitisDaniel]:http://twitter.com/PitisDaniel
     
