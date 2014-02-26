@@ -26,10 +26,9 @@ class Game(object):
 	score            = 0
 	shoot_timer      = timer.Timer()
 
-
 	images_handler = load_images.LoadImages()
 
-	solider_shooting 	  = images_handler.get_image("solider_shooting.png", constants.WHITE)
+	solider_shooting      = images_handler.get_image("solider_shooting.png", constants.WHITE)
 	solider_not_shooting  = images_handler.get_image("solider_not_shooting.png", constants.WHITE)
 	terrorist             = images_handler.get_image("terrorist.png", constants.WHITE)
 
@@ -174,12 +173,12 @@ class Game(object):
 
 	def _print_game_over(self, screen):
 
-			center_x = (constants.SCREEN_WIDTH // 2)
-			center_y = (constants.SCREEN_HEIGHT // 2)
-			self._print_text(screen,"Game over!", 25, center_x, center_y)
+		center_x = (constants.SCREEN_WIDTH // 2)
+		center_y = (constants.SCREEN_HEIGHT // 2)
+		self._print_text(screen,"Game over!", 25, center_x, center_y)
 
-			center_y += 50
-			self._print_text(screen,"PRESS ENTER to start again", 25, center_x, center_y)
+		center_y += 50
+		self._print_text(screen,"PRESS ENTER to start again", 25, center_x, center_y)
 	
 	def _print_scores(self, screen):
 		# Update kills text
@@ -201,11 +200,11 @@ class Game(object):
 			# This represents a terrorist
 			block = models.Terrorist(self.terrorist)
 
-			# Set a random location for the block
+			# Set a random location for the enemy
 			block.rect.x = random.randrange(constants.SCREEN_WIDTH  - 50)
 			block.rect.y = random.randrange(constants.SCREEN_HEIGHT - 400)
 
-			# Add the block to the list of objects
+			# Add the enemy to the list of objects
 			self.block_list.add(block)
 			self.all_sprites_list.add(block)
 
